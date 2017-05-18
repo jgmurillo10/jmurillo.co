@@ -355,6 +355,45 @@ ul.top-links li a i.fa-linkedin:hover{
 ul.top-links li a i.fa-google-plus:hover{
 	color:#dd4b39;
 }
+
+/*tech-links*/
+ul.tech-links li {
+    margin-right: 19px;
+    display: inline-block;
+}
+ul.tech-links {
+      margin-top: 0;
+}
+ul.tech-links li a i.fa , ul.tech-links li a img.tech-hover{
+    color: lightgrey;
+    font-size: 16px;
+    line-height: 31px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #00bdbd;
+}
+ul.tech-links li a i.fa:hover {
+    border: 2px solid lightgrey;
+}
+ul.tech-links li a img.tech-hover:hover {
+    border: 2px solid lightgrey;
+}
+ul.tech-links li a i.fa-html5:hover{
+	color:#6caddf;
+}
+ul.tech-links li a i.fa-css3:hover{
+	color:#1da1f2;
+}
+ul.tech-links li a img.tech-hover:hover{
+	color:#dd5143;
+}
+
 .w3_navigation {
     background: #44c7f4;
     padding: 0.5em 0;
@@ -844,7 +883,7 @@ left: 0%;
 .lightbox-target:target a.lightbox-close {
 top: 0px;
 }
-a.lightbox img:hover { 
+a.lightbox img:hover {
  background:#21A957;
 }
 /*--//projects--*/
@@ -924,15 +963,15 @@ a.lightbox img:hover {
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: rgba(255, 255, 255, 0.65); 
+   color: rgba(255, 255, 255, 0.65);
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: rgba(255, 255, 255, 0.65);  
+   color: rgba(255, 255, 255, 0.65);
 }
 
-:-ms-input-placeholder {  
-   color: rgba(255, 255, 255, 0.65);  
+:-ms-input-placeholder {
+   color: rgba(255, 255, 255, 0.65);
 }
 /*--//placeholder-color--*/
 
@@ -971,7 +1010,7 @@ a.lightbox img:hover {
 	bottom: 20px;
 	right: 2%;
 	overflow: hidden;
-	z-index: 999; 
+	z-index: 999;
 	width: 32px;
 	height: 32px;
 	border: none;
@@ -992,7 +1031,7 @@ a.lightbox img:hover {
 /*-- //to-top --*/
 /*--responsive--*/
 @media(max-width:1680px){
-	
+
 }
 @media(max-width:1440px){
 	.header {
@@ -1417,7 +1456,7 @@ a.lightbox img:hover {
 	.contact-agileits-w3layouts p {
 		font-size: 13.5px;
 	}
-	
+
 }
 @media(max-width:800px){
 	h4.title-w3ls {
@@ -2087,3 +2126,26 @@ a.lightbox img:hover {
 	}
 }
 /*--responsive--*/
+
+.btn-app{
+    outline: none;
+    border: none;
+    padding: 7px 40px;
+    background: #0b9494;
+    color: #fff;
+    font-size: 14px;
+	transition:.5s ease-in-out;
+	-webkit-transition:.5s ease-in-out;
+	-moz-transition:.5s ease-in-out;
+	-o-transition:.5s ease-in-out;
+	-ms-transition:.5s ease-in-out;
+}
+.btn-app:hover{
+	background:#2b2b2b;
+  color:white;
+	transition:.5s ease-in-out;
+	-webkit-transition:.5s ease-in-out;
+	-moz-transition:.5s ease-in-out;
+	-o-transition:.5s ease-in-out;
+	-ms-transition:.5s ease-in-out;
+}

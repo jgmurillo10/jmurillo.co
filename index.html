@@ -21,6 +21,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <script src="https://use.fontawesome.com/be36c20b93.js"></script>
+<script type="text/javascript" src="js/image-tooltip.js"></script>
+
+<!-- bootstrap core -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <!-- //js -->
 <link href='//fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
@@ -40,6 +45,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	});
 </script>
 <!-- start-smooth-scrolling -->
+<!-- tooltip -->
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
 </head>
 
 <body>
@@ -55,19 +67,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<nav>
 						  <ul>
 							<li class="active">
-								<a href="index.html" class="active"><span>Home</span></a>
+								<a href="index.html" class="active"><span>Inicio</span></a>
 							</li>
 							<li>
-								<a href="#about" class="scroll"><span>About</span></a>
+								<a href="#about" class="scroll"><span>Acerca de mí</span></a>
 							</li>
 							<li>
-								<a href="#experience" class="scroll"><span>Experience</span></a>
+								<a href="#experience" class="scroll"><span>Proyectos</span></a>
 							</li>
-							<li>
+							<!-- <li>
 								<a href="#projects" class="scroll"><span>Projects</span></a>
-							</li>
+							</li> -->
 							<li>
-								<a href="#contact" class="scroll"><span>Contact</span></a>
+								<a href="#contact" class="scroll"><span>Contacto</span></a>
 							</li>
 						  </ul>
 						</nav>
@@ -179,14 +191,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<h4>2017 - Actualidad </h4>
 				</div>
 				<div class="col-md-6 work-right">
-					<h5><span class="glyphicon glyphicon-globe"> </span> The Bible App <i class="fa fa-female"></i>  <i class="fa fa-male"></i> </h5>
+					<h5><span class="glyphicon glyphicon-globe"> </span> The Bible App
+						 <a href="https://github.com/miarevalo10" target="_blank" data-placement="top" data-toggle="tooltip" title="María Arévalo"> <i class="fa fa-female"></i>  </a>
+						 <a href="https://github.com/jgmurillo10" target="_blank" data-placement="top" data-toggle="tooltip" title="Juan Murillo"> <i class="fa fa-male"></i></a>
+					 </h5>
+					<div class="btn-group">
+						<a target="_blank" href="http://thebibl.herokuapp.com" class="btn btn-app" type="button" name="button"> <i class="fa fa-globe"></i> Demo </a>
+						<a target="_blank" href="https://github.com/jgmurillo10/thebibleMeteor" class="btn btn-app" type="button" name="button"> <i class="fa fa-github"></i> Repositorio</a>
 
+					</div>
+					<br>
+					<br>
 					<img class="img-responsive" src="./images/thebible.png" alt="">
-					<p> <strong>Tecnologías</strong> <i class="fa fa-html5"></i> <i class="fa fa-css3"></i> <img width="12px;" src="images/meteor.svg" alt=""> <img src="images/react.svg" width="12px" alt=""> </p>
+					<p> <strong>Tecnologías</strong>
+						<div class="social-icons animated wow bounceInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
+							<ul class="tech-links">
+								<li><a data-placement="top" data-toggle="tooltip" title="HTML"> <i class="fa fa-html5"></i></a></li>
+								<li><a data-placement="bottom" data-toggle="tooltip" title="CSS"> <i class="fa fa-css3"></i> </a></li>
+								<li><a data-placement="top" data-toggle="tooltip" title="Meteor">	<img  class="tech-hover"  width="12px;" src="images/meteor.svg" alt=""> </a></li>
+								<li><a data-placement="bottom" data-toggle="tooltip" title="React"> <img class="tech-hover" src="images/react.svg" width="16px" alt=""> </a></li>
+								<li><a data-placement="top" data-toggle="tooltip" title="Bootstrap"> <img class="tech-hover" src="images/bootstrap.svg" width="16px" alt=""> </a></li>
+
+							</ul>
+						</div>
+					</p>
 					<p><strong>Descripción: </strong>Aplicación web diseñada para almacenar archivos académicos. TheBibleApp permite a los usuarios crear o eliminar un Programa de Pregrado, crear un Curso y cargar un archivo de cualquier tipo (pdf, png, zip, etc). Además, el usuario puede descargar los archivos. Estos archivos se almacenan en Amazon S3.</p>
 				</div>
 				<div class="clearfix"></div>
-				
+
 				<div class="clearfix"> </div>
 			</div>
 			<div class="work-info">
